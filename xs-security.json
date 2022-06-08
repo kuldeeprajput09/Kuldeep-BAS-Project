@@ -1,0 +1,21 @@
+{
+  "xsappname": "worklist",
+  "tenant-mode": "dedicated",
+  "description": "Security profile of called application",
+  "scopes": [
+    {
+    "name":"$XSAPPNAME.Display",
+    "description":"UAA Display"
+    }
+
+],
+"role-templates": [
+    {
+        "name":"POC_WR_Role",
+        "description":"UAA POC_WR_ROLE",
+        "scope-references":[
+            "$XSAPPNAME.Display"
+        ]
+    }
+]
+}
